@@ -58,13 +58,6 @@ end
 # CHALLENGE:
 # 3. Similar to above, but display all of the activities for the salesperson
 # across all contacts (sample output below):
-puts "#{sp["first_name"]}'s Activities:"
-
-sp_acts = Activity.where({"salesperson_id"=>sp["id"]})
-
-for i in sp_acts
-    puts "- #{i["note"]}"
-end
 
 # ---------------------------------
 # Ben's Activities:
